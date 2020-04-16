@@ -36,7 +36,7 @@ class GameTeam < Collection
     worst = wins_by_coach.min_by {|coach, percent| percent}
     worst[0]
   end
-#what does this do?
+
   def self.game_team_shots_goals_count(arr_games)
     season = arr_games.first.game_id
     self.find_by(season)
