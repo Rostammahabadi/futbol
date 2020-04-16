@@ -1,8 +1,8 @@
 # Futbol
 
-##Mod 1 Group Project
+## Mod 1 Group Project
 
-###by The Dream Team
+### by The Dream Team
 
 *(Michelle Foley, Ross Perry, Rostam Mahabadi, Stella Bonnie)*
 
