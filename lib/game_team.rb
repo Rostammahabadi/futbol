@@ -1,12 +1,11 @@
 require_relative 'collection'
 require_relative 'game'
 require_relative 'hashable'
-require_relative 'winable'
 require_relative 'gameteamable'
 
 class GameTeam < Collection
+  
   extend Hashable
-  include Winable
   extend Gameteamable
 
   def self.percentage_home_wins
@@ -132,6 +131,11 @@ class GameTeam < Collection
     @giveaways = details[:giveaways].to_i
     @takeaways = details[:takeaways].to_i
     @season_id = @game_id.to_s[0..3]
+  end
+
+  def gt_win?
+    return 1 if @result == "WIN"
+    0
   end
 
 end
